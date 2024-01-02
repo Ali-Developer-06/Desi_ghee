@@ -641,6 +641,10 @@ footer .end-line p{
     .cart_sec_heading{
         display: flex;
     }
+    .pop_up{
+        width: 300px;
+        left: 50%; top: 80%;
+    }
 }
 
 
