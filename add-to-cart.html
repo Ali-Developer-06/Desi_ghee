@@ -11,21 +11,18 @@
     <!-- Bootstrap Links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <title>Product - Desi Ghee</title>
+    <title>Your Shopping Cart - Desi Ghee</title>
 </head>
 <body>
+
     <!-- Navbar -->
     <section>
         <!-- top nav -->
-
         <div class="top-nav">
             <h6>FREE SHIPPING NATIONWIDE</h6>
         </div>
-
         <!-- Main Nav -->
-
         <div id="navbar">
-
             <!-- Mid Nav -->
             <div class="container">
                 <div class="mid-nav">
@@ -41,9 +38,7 @@
                     <i class="ri-shopping-cart-line"></i>
                 </div>
             </div>
-
             <!-- Botton Nav -->
-
             <div class="container">
                 <div class="bnav">
                     <nav>
@@ -70,34 +65,85 @@
         </div>
     </section>
 
-    <!-- product section -->
-
-    <section class="product-sec" id="product_sec">
+    <section class="cart_section">
         <div class="container">
+            <div class="card_heading">
+                <h1>Your cart</h1>
+                <p>Continue shopping</p>
+            </div>
+            <div class="row cart_sec_heading">
+                <div class="col-md-8">
+                    <div class="cart_heading">
+                        <p>Product</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="cart_heading">
+                        <p>Quantity</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="cart_heading">
+                        <p>Total</p>
+                    </div>
+                </div>
+            </div>
             <div class="row">
-                <h1 class="product_heading">Products</h1>
-                <div class="col-md-4">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="Images/pishta.jpg" class="defult-img" alt="">
-                            <img src="Images/head.jpg" class="hover-img" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h6>Akhroto Sohen Halwa</h6>
-                            <p>Rs. 1,800.00</p>
+                <div class="col-md-8">
+                    <div class="add_to_cart_product">
+                        <div class="product_menu">
+                            <div class="add_to_cart_content_2">
+                                <img src="Images/add to cart.jpg" alt="">
+                                <div class="product_data">
+                                    <h4>Discount Offer ( Halwa , Barfi , Patisa , Panjiri )</h4>
+                                    <p>Rs.3,950.00</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="Images/BDMM.jpg" class="defult-img" alt="">
-                            <img src="Images/badamisimple.jpg" class="hover-img" alt="">
+                <div class="col-md-2">
+                    <div class="add_to_cart_quantity">
+                        <div class="quantity_menu">
+                            <p>-</p>
+                            <p>0</p>
+                            <p>+</p>
                         </div>
-                        <div class="product-content">
-                            <h6>Badami Sohen Halwa</h6>
-                            <p>Rs. 1,800.00</p>
+                        <div class="quantity_delete">
+                            <i class="ri-delete-bin-line"></i>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="add_to_cart_total">
+                        <div class="total_menu pt-2">
+                            <p>Rs.3,950.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="messege_subtotal_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="messege_box">
+                        <p>Order special instructions</p>
+                        <form action="">
+                            <textarea name="" id="" cols="50" rows="4"></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="subtotal_box">
+                        <div class="subtotal_box_content d-flex gap-4">
+                            <span>Subtotal</span>
+                            <p>Rs.19,750.00 PKR</p>
+                        </div>
+                        <p class="subtotal_box_p">Taxes and <b>shipping</b> calculated at checkout</p>
+                        <button>Check out</button>
                     </div>
                 </div>
             </div>

@@ -25,11 +25,19 @@
         <!-- Main Nav -->
 
         <div id="navbar">
+
             <!-- Mid Nav -->
             <div class="container">
                 <div class="mid-nav">
-                    <i class="ri-search-line"></i>
+                    <!-- hamburger -->
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <i class="ri-search-line" id="ri_search_1"></i>
                     <a href="index.html"><img src="Images/logo.png" alt=""></a>
+                    <i class="ri-search-line" id="ri_search_2"></i>
                     <i class="ri-shopping-cart-line"></i>
                 </div>
             </div>
@@ -39,10 +47,22 @@
             <div class="container">
                 <div class="bnav">
                     <nav>
-                        <ul>
-                            <li> <a href="index.html">Home</a> </li>
-                            <li> <a href="product.html">Product</a> </li>
-                            <li> <a href="#">Story</a> </li>
+                        <ul class="nav-menu">
+                            <li class="nav-item"> 
+                                <a href="index.html" class="nav-link">Home</a> 
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="product.html" class="nav-link">Product</a> 
+                            </li>
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link">Story</a> 
+                            </li>
+                            <div class="icons" id="responsive_icons">
+                                <i class="ri-twitter-fill"></i>
+                                <i class="ri-facebook-fill"></i>
+                                <i class="ri-instagram-line"></i>
+                                <i class="ri-tiktok-fill"></i>
+                            </div>
                         </ul>
                     </nav>
                 </div>
@@ -86,7 +106,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="product-card">
+                    <div class="product-card product-card-mob">
                         <div class="product-img">
                             <img src="Images/BDMM.jpg" class="defult-img" alt="">
                             <img src="Images/badamisimple.jpg" class="hover-img" alt="">
@@ -123,8 +143,10 @@
                             <p><span>Shipping</span> calculated at checkout.</p>
                         </div>
                         <div class="add_to_cart_btn">
-                            <button onclick="openPopUp()">Add to cart</button>
-                            <button>Buy it now</button>
+                            <button class="add_to_cart_Btn" onclick="openPopUp()">Add to cart</button>
+                            <a href="contact.html">
+                                <button class="buy_it_now">Buy it now</button>
+                            </a>
                         </div>
                         <div class="next-page">
                             <p>View full details </p>
@@ -146,8 +168,8 @@
                         <h4>Discount Offer ( Halwa , Barfi , Patisa , Panjiri )</h4>
                     </div>
                     <div class="add_to_cart_btn pt-3">
-                        <button>View my Cart</button>
-                        <button>Buy it now</button>
+                        <a href="add-to-cart.html" class="text-decoration-none"><button class="add_to_cart_Btn">View my Cart</button></a>
+                        <a href="contact.html"><button>Buy it now</button></a>
                     </div>
                     <div class="order_page">
                         <p>Continue Shipping</p>
