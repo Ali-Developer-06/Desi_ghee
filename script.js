@@ -29,3 +29,23 @@ let prevScrollPos = window.pageYOffset;
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
     }))
+
+    let quantityPlus = 0;
+    const pricePerUnit = 3950;
+    function updatePrice() {
+        const totalPrice = quantityPlus * pricePerUnit;
+        document.getElementById('pricePerUnit').innerText = totalPrice.toFixed(2);
+        document.getElementById('totalPrice').innerText = totalPrice.toFixed(2);
+    }
+    function increment() {
+        quantityPlus++;
+        document.getElementById('quantity').value = quantityPlus;
+        updatePrice();
+    }
+    function decrement() {
+        if (quantityPlus > 0) {
+            quantityPlus--;
+            document.getElementById('quantity').value = quantityPlus;
+            updatePrice();
+        }
+    }

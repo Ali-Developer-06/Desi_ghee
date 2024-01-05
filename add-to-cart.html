@@ -35,7 +35,7 @@
                     <i class="ri-search-line" id="ri_search_1"></i>
                     <a href="index.html"><img src="Images/logo.png" alt=""></a>
                     <i class="ri-search-line" id="ri_search_2"></i>
-                    <i class="ri-shopping-cart-line"></i>
+                    <a href="add-to-cart.html"><i class="ri-shopping-cart-line"></i></a>
                 </div>
             </div>
             <!-- Botton Nav -->
@@ -94,9 +94,9 @@
                     </div>
                     <div class="add_to_cart_quantity">
                         <div class="quantity_menu">
-                            <p>-</p>
-                            <p>0</p>
-                            <p>+</p>
+                            <p onclick="decrement()">-</p>
+                            <input type="text" id="quantity" value="0" readonly class="box">
+                            <p onclick="increment()">+</p>
                         </div>
                         <div class="quantity_delete">
                             <i class="ri-delete-bin-line"></i>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="add_to_cart_total">
                         <div class="total_menu pt-2">
-                            <p>Rs.3,950.00</p>
+                            <p>Rs <span id="pricePerUnit" class="box">0.00</span></p>
                         </div>
                     </div>
                 </div>
@@ -132,10 +132,10 @@
                     <div class="subtotal_box">
                         <div class="subtotal_box_content d-flex gap-4">
                             <span>Subtotal</span>
-                            <p>Rs.19,750.00 PKR</p>
+                            <p>Rs <span id="totalPrice" class="box">0.00</span></p>
                         </div>
                         <p class="subtotal_box_p">Taxes and <b>shipping</b> calculated at checkout</p>
-                        <button>Check out</button>
+                        <a href="contact.html" class="Check_out_btn">Check out</a>
                     </div>
                 </div>
             </div>

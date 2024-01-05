@@ -44,6 +44,9 @@
     justify-content: space-between;
     margin: 20px 0;
 }
+.mid-nav a{
+    text-decoration: none;
+}
 .mid-nav i{
     color: #000;
     font-size: 1.2rem;
@@ -436,6 +439,12 @@ footer .end-line p{
     margin: 0;
     padding: 10px 15px;
 }
+.add_to_cart_quantity .quantity_menu input{
+    width: 30px;
+    border: none;
+    background: none;
+    text-align: center;
+}
 .add_to_cart_quantity .quantity_menu p:nth-child(odd){
     cursor: pointer;
 }
@@ -476,10 +485,12 @@ footer .end-line p{
     font-size: 12px;
     color: #625D66;
 }
-.subtotal_box button{
+.subtotal_box .Check_out_btn{
     width: 60%;
-    height: 50px;
+    padding: 10px 0;
+    text-align: center;
     border-radius: 10px;
+    text-decoration: none;
     color: var(--primary-color);
     background-color: var(--dark-yellow);
     border: 1.5px solid var(--dark-yellow);

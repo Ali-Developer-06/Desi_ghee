@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Price Increment/Decrement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .box {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button onclick="decrement()">Decrement</button>
+    <input type="text" id="quantity" value="0" readonly class="box">
+    <button onclick="increment()">Increment</button>
+</div>
+
+<div>
+    <p>Price per Unit: $<span id="pricePerUnit" class="box">10.00</span></p>
+    <p>Total Price: $<span id="totalPrice" class="box">0.00</span></p>
+</div>
+
+<script>
+    let quantity = 0;
+    const pricePerUnit = 10.00; // You can set your product's price per unit here
+
+    function updatePrice() {
+        const totalPrice = quantity * pricePerUnit;
+        document.getElementById('pricePerUnit').innerText = totalPrice.toFixed(2);
+        document.getElementById('totalPrice').innerText = totalPrice.toFixed(2);
+    }
+
+    function increment() {
+        quantity++;
+        document.getElementById('quantity').value = quantity;
+        updatePrice();
+    }
+
+    function decrement() {
+        if (quantity > 0) {
+            quantity--;
+            document.getElementById('quantity').value = quantity;
+            updatePrice();
+        }
+    }
+</script>
+
+</body>
+</html>
